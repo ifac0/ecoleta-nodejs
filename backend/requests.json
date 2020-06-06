@@ -1,0 +1,166 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "abaf4b75-7058-4a70-8b66-9f8cf933fc49",
+        "name": "nlw"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"name\": \"Mercado\",\n  \"email\": \"contato@email.com.br\",\n  \"whatsapp\": \"81988778877\",\n  \"latitude\": -46.812224,\n  \"longitude\": -35.15845,\n  \"city\": \"Rio do Sul\",\n  \"uf\":  \"SC\",\n  \"items\": [\n  \t1,\n  \t2,\n  \t6 \n  ]\n}\t"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:3333",
+              "path": "/points"
+            },
+            "id": "76462c37-4be2-4f1b-8692-af4b4b8902f1",
+            "name": "Criar ponto de coleta",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:3333",
+              "path": "/points/3"
+            },
+            "id": "f11df886-e5ae-4064-8986-9619d7d63d9d",
+            "name": "Lista point específico",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:3333",
+              "path": "/items"
+            },
+            "id": "0e46625a-6764-41e1-b03f-4d13226a866a",
+            "name": "Listar Items",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": [
+                  {
+                    "enabled": true,
+                    "name": "city",
+                    "value": "Rio do Sul"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "uf",
+                    "value": "SC"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "items",
+                    "value": "6"
+                  }
+                ]
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:3333",
+              "path": "/points/"
+            },
+            "id": "14db1101-7926-43a4-8ea9-4d0161e11a43",
+            "name": "Listar pontos filtrados",
+            "headers": []
+          }
+        }
+      ]
+    }
+  ]
+}
