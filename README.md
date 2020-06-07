@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center"> 
-	:construction: In progress.. :construction:
+	:construction: Em desenvolvimento.. :construction:
 </h4>
 
 ## 💻 Projeto
@@ -11,9 +11,9 @@
 Ecoleta é um projeto desenvolvido com base na semana internacional do meio ambiente. 
 O objetivo é conectar pessoas a empresas que coletam resíduos específicos, como lâmpadas, baterias, óleo de cozinha etc.
 
-## :rocket: Technologies
+## :rocket: Tecnologias
 
-This project was developed with the following technologies:
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.js][nodejs]
 - [TypeScript][typescript]
